@@ -1,0 +1,46 @@
+@import "./variables.scss";
+
+.category__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: $color-darkGray;
+
+  &-all,
+  &-add {
+    display: flex;
+    flex: 1 0 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    &_icon {
+      font-size: 0.8rem;
+    }
+    &_text {
+      font-size: 0.8rem;
+      margin-left: 5px;
+    }
+    &:hover {
+      background-color: $color-white;
+      transition: 0.8s;
+      cursor: pointer;
+    }
+    &:active {
+      background-color: $color-hoverCategory;
+      color: $color-white;
+      transition: 0.3s;
+    }
+  }
+  &-add {
+    &:active {
+      background-color: $color-orange;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    margin-bottom: 0px;
+  }
+}

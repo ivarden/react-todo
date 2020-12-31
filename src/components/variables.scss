@@ -1,0 +1,31 @@
+$color-lightGray: #ebebeb;
+$color-gray: #5e5e5e;
+$color-darkGray: #313131;
+$color-lightBlue: #00a6fb;
+$color-blue: #0582ca;
+$color-darkBlue: #0353a4;
+$color-orange: #FFB703;
+$color-darkOrange: #FB8500;
+$color-green: #3bceac;
+$color-darkGreen: #0ead69;
+$color-red: #ff676a;
+$color-darkRed: #ef233c;
+$color-violet: #c355f5;
+$color-white: #fff;
+$color-hoverCategory: #47a6ff;
+
+$color-sidebarBackground: #f4f6f8;
+$color-popUpBackground: #76ffe899;
+$color-popUpColorActive: #000000;
+$color-popUpColorHover: #4100aa;
+
+:export {
+  color-gray: $color-gray;
+  color-lightBlue: $color-lightBlue;
+  color-orange: $color-orange;
+  color-green: $color-green;
+  color-darkGreen: $color-darkGreen;
+  color-red: $color-red;
+  color-darkRed: $color-darkRed;
+  color-violet: $color-violet;
+}

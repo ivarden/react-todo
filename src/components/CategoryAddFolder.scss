@@ -1,0 +1,153 @@
+@import "./variables.scss";
+
+.category__add-folder {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $color-popUpBackground;
+
+  &_wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  &_wrap-inside {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: $color-white;
+    box-shadow: 0px 6px 10px $color-gray;
+    border-radius: 10px;
+    width: 260px;
+    height: 160px;
+    left: 0 auto;
+  }
+  & input,
+  button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $color-lightGray;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  & button {
+    color: $color-white;
+    background-color: $color-darkGreen;
+    &:hover {
+      background-color: $color-blue;
+      cursor: pointer;
+    }
+    &:active {
+      background-color: $color-orange;
+      cursor: pointer;
+    }
+  }
+  &_close {
+    background-color: $color-white;
+    border-radius: 50%;
+    & svg {
+      width: 25px;
+      height: 25px;
+    }
+    & svg:hover {
+      transition: 0.5s;
+      transform: rotate(180deg);
+    }
+    & svg:active {
+      transition: 0.5s;
+      transform: rotate(-180deg);
+    }
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    padding: 5px;
+    color: $color-gray;
+    cursor: pointer;
+  }
+
+  &_color-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    & svg {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+  }
+
+  &_color-item {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+  }
+
+  &_container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    & input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+    &:hover input ~ .color-item__checkmark {
+      border: 2px solid $color-popUpColorHover;
+      transition: 0.2s;
+    }
+    & input:checked ~ .color-item__checkmark {
+      border: 2px solid $color-popUpColorActive;
+    }
+  }
+}
+
+.color-item__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.color-item1 {
+  color: $color-lightBlue;
+  background-color: $color-lightBlue;
+}
+.color-item2 {
+  color: $color-orange;
+  background-color: $color-orange;
+}
+.color-item3 {
+  color: $color-darkOrange;
+  background-color: $color-darkOrange;
+}
+.color-item4 {
+  color: $color-green;
+  background-color: $color-green;
+}
+.color-item5 {
+  color: $color-darkGreen;
+  background-color: $color-darkGreen;
+}
+.color-item6 {
+  color: $color-red;
+  background-color: $color-red;
+}
+.color-item7 {
+  color: $color-red;
+  background-color: $color-darkRed;
+}
+.color-item8 {
+  color: $color-violet;
+  background-color: $color-violet;
+}
