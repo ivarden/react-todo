@@ -13,8 +13,13 @@
     align-items: center;
     margin-right: 5px;
     color: $color-gray;
-    svg {
-      width: 15px;
+    width: 17px;
+    height: 15px;
+
+    &_circle {
+      border-radius: 50%;
+      width: 17px;
+      height: 15px;
     }
   }
 

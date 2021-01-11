@@ -1,5 +1,4 @@
 import React from "react";
-import { FaCircle } from "react-icons/fa";
 import "./CategoryFolder.scss";
 
 const CategoryFolder: React.FC<{
@@ -8,9 +7,9 @@ const CategoryFolder: React.FC<{
 }> = ({ text, color }) => {
   return (
     <div className="category__folder">
-      <i className="category__folder-icon">
-        <FaCircle style={{ color }} />
-      </i>
+      <i
+        className={`category__folder-icon category__folder-icon_circle  ${color}`}
+      />
       <span className="category__folder-text">{text}</span>
     </div>
   );

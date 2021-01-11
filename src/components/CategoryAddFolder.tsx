@@ -1,6 +1,7 @@
 import React from "react";
 import { FaTimesCircle } from "react-icons/fa";
 import "./CategoryAddFolder.scss";
+import { createCategory } from "../todoContainer";
 
 const colors = [1, 2, 3, 4, 5, 6, 7, 8];
 
@@ -36,10 +37,10 @@ const CategoryAddFolder: React.FC<{
 
   const submitHandler = (e: React.FormEvent<HTMLElement>): void => {
     e.preventDefault();
-    const newFolder = { title, color };
     setColor("color-item1");
     setTitle("");
-    console.log(newFolder);
+    createCategory({ id: Date.now(), title, color });
+    setAddFolder(false);
   };
 
   return (
