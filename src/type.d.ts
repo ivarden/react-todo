@@ -3,7 +3,6 @@ interface ITodoCategory {
   title: string;
   color: string;
 }
-
 interface ITodo {
   id: number;
   category: ITodoCategory;
@@ -22,4 +21,12 @@ interface IState {
   editTodo: (id: number) => void;
   closeTodo: (id: number) => void;
   deleteTodo: (id: number) => void;
+}
+interface ICategoryAdd {
+  colors: number[];
+  color: string;
+  title: string;
+  onChangeHandler: (e: React.FormEvent<HTMLInputElement>) => void;
+  submitHandler: (e: React.FormEvent<HTMLElement>) => void;
+  setAddFolder: (title: boolean) => void;
 }

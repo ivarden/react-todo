@@ -1,6 +1,6 @@
 import React from "react";
 import CategoryButtons from "./CategoryButtons";
-import CategoryAddFolder from "./CategoryAddFolder";
+import CategoryAddContainer from "./CategoryAddContainer";
 import CategoryFolder from "./CategoryFolder";
 import "./App.scss";
 
@@ -23,7 +23,7 @@ const App: React.FC = () => {
           ))}
         </div>
       </div>
-      {addFolder && <CategoryAddFolder setAddFolder={setAddFolder} />}
+      {addFolder && <CategoryAddContainer setAddFolder={setAddFolder} />}
 
       <div className="todo__content">content</div>
     </div>
